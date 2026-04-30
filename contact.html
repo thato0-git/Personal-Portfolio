@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Thato Mokhuamathe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form-styles.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Thato Mokhuamathe Logo" />
+      </a>
+      <div class="header-icons">
+        <i class="bx bx-moon" id="darkmode"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-desc">
+          I am actively seeking opportunities to contribute my skills and grow
+          as a software developer. If you have any questions, would like to
+          discuss potential collaborations, or simply want to connect, please
+          feel free to reach out through the contact information below.
+        </p>
+        <div class="contact-form">
+          <form
+            action="https://formspree.io/f/xrealeye"
+            method="post"
+            id="contact-form-element"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              aria-label="Full Name"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              aria-label="Email Address"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+              aria-label="Message Content"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn sent"
+              aria-label="Submit Contact Form"
+            >
+              Send Message
+            </button>
+            <div id="form-status" role="status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <button class="chatbot-toggle" aria-label="Open portfolio chatbot">
+      💬
+    </button>
+
+    <div
+      class="chatbot-panel"
+      aria-live="polite"
+      aria-label="Portfolio chatbot"
+    >
+      <div class="chatbot-header">
+        <span>Portfolio Chatbot</span>
+        <button class="chatbot-close" aria-label="Close chatbot">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chatbot-message">
+          Hi! 😊 Ask me about my skills, projects, certificates, or
+          availability.
+        </div>
+      </div>
+      <div class="chatbot-input-wrap">
+        <input
+          id="chatbot-input"
+          class="chatbot-input"
+          type="text"
+          placeholder="Ask a question..."
+          aria-label="Chatbot question input"
+        />
+        <button
+          id="chatbot-send"
+          class="chatbot-send"
+          aria-label="Send chatbot question"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+
+    <footer><p>&copy; 2025 Thato Mokhuamathe. Let's Connect.</p></footer>
+    <script src="main.js"></script>
+  </body>
+</html>

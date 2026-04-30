@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Thato Mokhuamathe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form-styles.css" />
+  </head>
+  <body>
+    <header class="sticky">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Thato Mokhuamathe Logo" />
+      </a>
+      <div class="header-icons">
+        <i class="bx bx-moon" id="darkmode"></i>
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+          <p>
+            <strong>Welcome to my personal porfolio! </strong>I am Information
+            Technology graduate whose passion for technology began as a
+            curiosity about how systems work and how they contribute to our
+            daily lives. I have interest in software development, web
+            development and problem solving. I am proud to design and build
+            software solutions and websites that solve real world problems.
+            <br />
+            Throughout my journey, I have built projects such as
+            <strong> Property Management System</strong> using three-tie
+            achitecture, a <strong>Student Accomodation Review</strong> platform
+            designed to help students make better housing choices, and a
+            responsive <strong>Personal Portfolio</strong> that showcases my
+            ability to design user-friendly and visually appealing solutions.
+            <br />
+            Through these projects, I gained practical experience in
+            <strong
+              >Java, HTML, CSS, JavaScript and also applied Object-Oriented
+              Programming principles</strong
+            >
+            while learning how to connect front-end interfaces with backend
+            logic and databases.
+            <br />
+            I enjoy turning ideas into working products, learning new
+            technologies and improving my technical and problem solving skills.
+            I value collaboration, adaptability and building applications that
+            creates meaningful impact into users and communities.
+            <br />
+            Currently, I am seeking an
+            <strong>internship or entry level position</strong> in software
+            development where i can contribute my skills, learn from exprienced
+            professionals and grow as a developer. I am excited about the future
+            of technology and the opportunity to be part of innovative projects
+            that make a difference in the world.
+          </p>
+        </div>
+        <h2 class="section-title">My Education</h2>
+        <div class="education-grid">
+          <div class="edu-card">
+            <div class="edu-header">
+              <i class="bx bxs-graduation edu-icon"></i>
+              <div>
+                <h3>Diploma in Information Technology</h3>
+                <span class="edu-institution"
+                  >Vaal University of Technology</span
+                >
+              </div>
+            </div>
+            <div class="edu-body">
+              <p class="edu-meta">
+                <i class="bx bx-calendar"></i> 2023 - 2025 | Graduation: April
+                2026
+              </p>
+              <h4>Key Coursework</h4>
+              <div class="coursework-tags">
+                <span>Software Development</span>
+                <span>Web Development</span>
+                <span>Business Analysis</span>
+                <span>System Software</span>
+                <span>Entrepreneurship</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-header">
+              <i class="bx bxs-school edu-icon"></i>
+              <div>
+                <h3>National Senior Certificate</h3>
+                <span class="edu-institution">Are-Fadimeheng High School</span>
+              </div>
+            </div>
+            <div class="edu-body">
+              <p class="edu-meta"><i class="bx bx-calendar"></i> 2018 - 2022</p>
+              <p><strong>Result:</strong> Bachelor's Pass</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="chatbot-toggle" aria-label="Open portfolio chatbot">
+      💬
+    </button>
+
+    <div
+      class="chatbot-panel"
+      aria-live="polite"
+      aria-label="Portfolio chatbot"
+    >
+      <div class="chatbot-header">
+        <span>Portfolio Chatbot</span>
+        <button class="chatbot-close" aria-label="Close chatbot">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="chatbot-message">
+          Hi! 😊 Ask me about my skills, projects, certificates, or
+          availability.
+        </div>
+      </div>
+      <div class="chatbot-input-wrap">
+        <input
+          id="chatbot-input"
+          class="chatbot-input"
+          type="text"
+          placeholder="Ask a question..."
+          aria-label="Chatbot question input"
+        />
+        <button
+          id="chatbot-send"
+          class="chatbot-send"
+          aria-label="Send chatbot question"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+
+    <footer><p>&copy; 2025 Thato Mokhuamathe. Let's Connect.</p></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
