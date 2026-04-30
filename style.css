@@ -821,65 +821,48 @@ body.active footer {
   }
 
   .home {
-    padding-top: 80px;
+    padding-top: 120px; /* Increased to prevent header overlap */
     min-height: auto;
+    padding-bottom: 40px;
+  }
+
+  .home-content {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    flex: none;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .contact-bar, .btn-group, .social-icons {
+    justify-content: center;
   }
 
   .home-content h1 {
     font-size: 32px;
+    line-height: 1.2;
   }
 
   .home-content h3 {
     font-size: 16px;
   }
 
-  .role-text {
-    font-size: 18px;
-  }
-
   .hero-img {
-    width: 240px;
-    height: 240px;
-  }
-
-  .btn-group {
-    gap: 10px;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
   }
 
   .btn {
     padding: 10px 20px;
     font-size: 14px;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
-
-  .education-card {
-    grid-template-columns: 1fr;
-  }
-
-  .about-card {
-    padding: 20px;
-  }
-
-  .info-card {
-    padding: 20px;
-  }
-
-  .portfolio-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .social-icons {
-    gap: 15px;
-  }
-
-  .social-icons a {
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
   }
 }
 
@@ -893,7 +876,7 @@ body.active footer {
   }
 
   .home-content h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .home-content h3 {
