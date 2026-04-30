@@ -746,6 +746,28 @@ body.active .portfolio-card p {
   color: white;
 }
 
+/* Local Run Notice for Desktop Apps */
+.local-notice {
+  font-size: 13px;
+  color: var(--primary-color);
+  background: rgba(37, 99, 235, 0.08);
+  padding: 8px 12px;
+  border-radius: 6px;
+  border-left: 3px solid var(--primary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-style: italic;
+}
+
+body.active .local-notice {
+  background: rgba(74, 222, 128, 0.1);
+}
+
+.local-notice i {
+  font-size: 16px;
+}
 
 
 /* ===========================
@@ -796,7 +818,7 @@ body.active footer {
   }
 
   .home {
-    padding-top: 50px;
+    padding-top: 80px;
     min-height: auto;
   }
 
