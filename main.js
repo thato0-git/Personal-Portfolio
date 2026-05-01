@@ -49,7 +49,7 @@ if (darkmode) {
 /* 4. TYPING EFFECT */
 const typingText = document.querySelector(".typing");
 if (typingText) {
-    const roles = ["Software Developer", "Web Developer", "Problem Solver"];
+    const roles = ["Software Developer", "Web Developer", "Problem Solver","IT Support Technician"];
     let roleIndex = 0, charIndex = 0, isDeleting = false;
 
     function typeEffect() {
