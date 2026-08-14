@@ -330,3 +330,38 @@ document.querySelectorAll(".navbar a").forEach(link => {
         link.classList.add("active");
     }
 });
+
+const openCv = document.getElementById("openCv");
+const closeCv = document.getElementById("closeCv");
+const cvModal = document.getElementById("cvModal");
+const cvDialog = cvModal?.querySelector(".cv-modal-content");
+
+if (openCv && closeCv && cvModal) {
+    function closeCvModal() {
+        cvModal.classList.remove("show");
+        cvModal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("cv-open");
+        openCv.focus();
+    }
+
+    openCv.addEventListener("click", () => {
+        cvModal.classList.add("show");
+        cvModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("cv-open");
+        cvDialog?.focus();
+    });
+
+    closeCv.addEventListener("click", closeCvModal);
+
+    cvModal.addEventListener("click", (event) => {
+        if (event.target === cvModal) {
+            closeCvModal();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && cvModal.classList.contains("show")) {
+            closeCvModal();
+        }
+    });
+}

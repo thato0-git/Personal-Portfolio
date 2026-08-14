@@ -103,9 +103,10 @@
           </div>
 
           <div class="btn-group">
-            <a href="docs/THATO MOKHUAMATHE.pdf" download class="btn primary"
-              >Download CV</a
-            >
+            <button type="button" class="btn primary" id="openCv">
+                  View CV
+            </button>
+            
             <a href="contact.html" class="btn secondary">Contact Me</a>
             <a href="portfolio.html" class="btn tertiary">View Projects</a>
           </div>
@@ -347,7 +348,7 @@
           </div>
           <div class="proj-actions">
             <a
-              href="https://resconnect.netlify.app/"
+              href="https://thato0-git.github.io/ResConnect/"
               target="_blank"
               rel="noopener noreferrer"
               class="proj-link"
@@ -701,6 +702,120 @@
       </div>
     </section>
     </main>
+
+    <div class="cv-modal" id="cvModal" aria-hidden="true">
+      <article
+        class="cv-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cvTitle"
+        tabindex="-1"
+      >
+        <button type="button" class="close-cv" id="closeCv" aria-label="Close CV">
+          <i class="bx bx-x"></i>
+        </button>
+
+        <div class="cv-header">
+          <h2 id="cvTitle">Thato Mokhuamathe</h2>
+          <p>Information Technology Graduate <span>|</span> Software Developer</p>
+          <div class="cv-contact-details">
+            <a href="mailto:thatomokhuamathe@gmail.com"><i class="bx bx-envelope"></i> thatomokhuamathe@gmail.com</a>
+            <a href="tel:0782790626"><i class="bx bx-phone"></i> 078 279 0626</a>
+            <a href="https://www.linkedin.com/in/thato-mokhuamathe/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin-square"></i> LinkedIn</a>
+            <a href="https://github.com/thato0-git" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i> GitHub</a>
+            <a href="https://thato0-git.github.io/Personal-Portfolio/" target="_blank" rel="noopener noreferrer"><i class="bx bx-globe"></i> Portfolio</a>
+          </div>
+        </div>
+
+        <section class="cv-section">
+          <h3>Professional Summary</h3>
+          <p>
+            Motivated Information Technology graduate specializing in Software Development, with a strong foundation in programming, software engineering principles, and problem-solving. Skilled in Java, Python, PHP, JavaScript, SQL, and database management, with practical experience building full-stack and database-driven applications. Experienced in applying SDLC and object-oriented programming principles through practical projects. Seeking to apply technical knowledge and analytical skills in a professional environment while contributing to innovative software and business solutions.
+          </p>
+        </section>
+
+        <div class="cv-columns">
+          <div>
+            <section class="cv-section">
+              <h3>Education</h3>
+              <div class="cv-entry">
+                <div>
+                  <h4>Vaal University of Technology (VUT)</h4>
+                  <p>Diploma in Information Technology (Software Development)</p>
+                </div>
+                <span>2023 - 2025</span>
+              </div>
+              <div class="cv-entry">
+                <div>
+                  <h4>Are-Fadimeheng High School</h4>
+                  <p>National Senior Certificate</p>
+                </div>
+                <span>2022</span>
+              </div>
+            </section>
+
+            <section class="cv-section">
+              <h3>Key Competencies</h3>
+              <ul class="cv-list cv-competencies">
+                <li>Software Development Life Cycle (SDLC)</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Full-Stack Web Development</li>
+                <li>Database Management and SQL Queries</li>
+                <li>CRUD Application Development</li>
+                <li>Java, Python, PHP, JavaScript, HTML and CSS</li>
+              </ul>
+            </section>
+          </div>
+
+          <div>
+            <section class="cv-section">
+              <h3>Certifications</h3>
+              <ul class="cv-list">
+                <li>Cisco IT Essentials</li>
+                <li>IT Customer Support</li>
+                <li>Computer Hardware Basics</li>
+                <li>Cisco CCNA v7: Switching, Routing and Wireless Essentials</li>
+              </ul>
+            </section>
+
+            <section class="cv-section">
+              <h3>Professional Skills</h3>
+              <ul class="cv-list">
+                <li>Strong analytical and problem-solving skills</li>
+                <li>Ability to write clean, maintainable code</li>
+                <li>Excellent communication and collaboration skills</li>
+                <li>Strong attention to detail</li>
+                <li>Ability to learn new technologies quickly</li>
+                <li>Effective time management and prioritisation</li>
+                <li>Teamwork and cross-functional collaboration</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <section class="cv-section cv-projects">
+          <h3>Projects</h3>
+          <article class="cv-project">
+            <h4>Property Management System</h4>
+            <p class="cv-tech">Java, Java Swing, MySQL, JDBC</p>
+            <ul class="cv-list">
+              <li>Designed and implemented a graphical user interface for efficient property management.</li>
+              <li>Integrated MySQL database connectivity using JDBC and built CRUD functionality for property records.</li>
+              <li>Applied object-oriented programming principles to improve scalability and maintainability.</li>
+            </ul>
+          </article>
+          <article class="cv-project">
+            <h4>UbuntuRescue Web Application</h4>
+            <p class="cv-tech">HTML, CSS, JavaScript, PHP, MySQL</p>
+            <ul class="cv-list">
+              <li>Developed a web-based emergency response platform focused on community safety.</li>
+              <li>Designed a responsive interface and integrated front-end and back-end functionality with PHP and MySQL.</li>
+              <li>Tested user-interface workflows, validation, responsive behaviour, and usability across devices.</li>
+            </ul>
+          </article>
+        </section>
+      </article>
+    </div>
 
     <button class="chatbot-toggle" aria-label="Open portfolio chatbot">
       💬
